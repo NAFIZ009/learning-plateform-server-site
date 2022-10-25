@@ -11,3 +11,6 @@ app.get('/courses/:id', (req, res) => {
     const filtredData=data.find(data=>data.id==id);
     res.send(filtredData);
 });
+app.listen(port,()=>{
+    console.log('port no',port)
+})
